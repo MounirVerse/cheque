@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="plugin/jquery/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="Payee_name_div">
+        <button id="Payee_name_butt" class="cont_butn" tabindex="-1" style="float: left;"><i class="fa fa-cog"></i></button>
+        <h4 class="arabic ribbon2" style="display: inline-block; left: 0px; right: -30px;">اسم المستفيد<style>.ribbon2:before{right:-6.5px}</style><style>.ribbon2:before{border-radius:0 5px 5px 0}</style><style>.ribbon2:after{right:-4.5px}</style><style>.ribbon2:after{left:0}</style></h4>
+        <h4 class="english ribbon2" style="display: none; left: 0px; right: -30px;">Payee Name<style>.ribbon2:before{right:-6.5px}</style><style>.ribbon2:before{border-radius:0 5px 5px 0}</style><style>.ribbon2:after{right:-4.5px}</style><style>.ribbon2:after{left:0}</style></h4>
+        <h4 class="french ribbon2" style="display: none; left: 0px; right: -30px;">À l'ordre de<style>.ribbon2:before{right:-6.5px}</style><style>.ribbon2:before{border-radius:0 5px 5px 0}</style><style>.ribbon2:after{right:-4.5px}</style><style>.ribbon2:after{left:0}</style></h4>
+            <div class="autocomplete">
+                <textarea id="Payee_name" class="Payee_name entr_fld" style="outline: none; width:170px"></textarea>    
+              <div class="dialog" id="dialog" style="margin-right: 3px; margin-left: 0px;"></div>
+            </div>
+        
+        <div class="btn-toolbar" role="toolbar" id="Payee_name_sett" style="margin-top: 5px;"> 
+            <div>
+                <p class="arabic" style="font-size: 15px; display: inline-block;">حجم الخط&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                <p class="english" style="font-size: 15px; display: none;">Font Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                <p class="french" style="font-size: 15px; display: none;">Taille de police</p>
+                    <input type="range" class="font-rang1" min="14" max="24" id="Payee_name_rang" style="display:inline-block; vertical-align: middle">
+            </div>
+
+            
+            <div style=" width : 210px; margin : auto">
+                <p class="arabic" style="margin-top: 6px; font-size: 16px; display: inline-block;">وزن الخط&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p class="english" style="margin-top: 6px; font-size: 16px; display: none;">Font Weight&nbsp;</p>
+                <p class="french" style="margin-top: 6px; font-size: 14px; display: none;">Poids de la police</p>
+                <input type="range" class="font-rang1" min="400" max="800" id="Payee_name_weight" style="display:inline-block; vertical-align: middle" step="200">
+            </div>
+            
+            <div style=" width : 210px; margin : auto">
+                <p class="arabic" style="margin-top: 6px; font-size: 16px; display: inline-block;">محاذاة النص</p>
+                <p class="english" style="margin-top: 6px; font-size: 16px; display: none;">Text align&nbsp;&nbsp;&nbsp;</p>
+                <p class="french" style="margin-top: 6px; font-size: 16px; display: none;">Alignement&nbsp;&nbsp;</p>
+                <div class="btn-group" style="float: left;">    
+                    <button type="button" class="btn btn-default" id="Payee_name_left">
+                      <i class="fa fa-align-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-default" id="Payee_name_center">
+                      <i class="fa fa-align-center"></i>
+                    </button>
+                    <button type="button" class="btn btn-default" id="Payee_name_right">
+                      <i class="fa fa-align-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div>
+                <p class="arabic" style="font-size: 15px; display: inline-block;">تعديل عمودي&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                <p class="english" style="font-size: 15px; display: none;">Vert  Adj. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                <p class="french" style="font-size: 15px; display: none;">Vert  Adj. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                    <input type="range" class="font-rang1" min="-10" max="10" id="Payee_name_rang2" style="display:inline-block; vertical-align: middle">
+            </div>
+
+            <div>
+                <p class="arabic" style="font-size: 15px; display: inline-block;">تعديل افقي&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                <p class="english" style="font-size: 15px; display: none;">Horz Adj. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                <p class="french" style="font-size: 15px; display: none;">Horz Adj. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+                    <input type="range" class="font-rang1" min="-10" max="10" id="Payee_name_rang3" style="display:inline-block; vertical-align: middle">
+            </div>
+            
+            <div style=" width : 210px; margin : auto">
+                <p class="arabic" style="margin-top: 6px; font-size: 16px; display: inline-block;">جدول الاسماء المحفوظة</p>
+                <p class="english" style="margin-top: 6px; font-size: 16px; display: none;">Saved Names Table&nbsp;&nbsp;&nbsp;</p>
+                <p class="french" style="margin-top: 6px; font-size: 13px; display: none;">Tableau des noms enregistrés</p>
+                <div class="btn-group" style="float: left;">    
+                    <button type="button" class="btn btn-default" id="add_payee_btn">
+                      <i class="fa fa-table" style="font-size:20px;width:19px"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    <script src="plugin/jquery/jquery.min.js"></script>
+    <p id="Payee_lbl" class="In_cheque" style="top: 2.2cm; left: 1.2cm; width: 450px; font-size: 24px; font-weight: 800; text-align: left; margin-top: 0px;">Dinar Algerian</p>
+        <script>
+            $("#Payee_name_rang").change(function(){
+                var newval=$(this).val();
+                $("#Payee_lbl").css('font-size', newval +"px" );
+                localStorage.setItem("Payee_fnt", newval);
+            });
+            
+            $("#Payee_name_weight").change(function(){
+                var newval=$(this).val();
+                $("#Payee_lbl").css('font-weight', newval);
+                localStorage.setItem("Payee_weight", newval);
+            });
+
+            $("#Payee_name_rang2").change(function(){
+                var newval1 =$(this).val();
+                $("#Payee_lbl").css('margin-top', newval1 +"px" );
+                localStorage.setItem("Payee_mrg_top", newval1);
+            });
+
+            $("#Payee_name_rang3").change(function(){
+                var newval2 =$(this).val();
+                $("#Payee_lbl").css('margin-left', newval2 +"px" );
+                localStorage.setItem("Payee_mrg_lft", newval2);
+            });
+
+
+            $("#Payee_name_butt").click(function(){
+                $("#Payee_name_sett").toggle(600)})
+
+            $("#Payee_name_left").click(function(){
+                $("#Payee_lbl").css('text-align', 'left');
+                localStorage.setItem("Payee_align", "left");
+            })
+
+            $("#Payee_name_center").click(function(){
+                $("#Payee_lbl").css('text-align', 'center');
+                localStorage.setItem("Payee_align", "center");
+            })
+
+            $("#Payee_name_right").click(function(){
+                $("#Payee_lbl").css('text-align', 'right');
+                localStorage.setItem("Payee_align", "right");
+            })
+
+
+
+            $("#Payee_name_rang").change(function(){
+                        var newval=$(this).val();
+                        $("#Payee_lbl").css('font-size', newval +"px" );
+                        localStorage.setItem("Payee_fnt", newval);
+                    });
+                    
+                    $("#Payee_name_weight").change(function(){
+                        var newval=$(this).val();
+                        $("#Payee_lbl").css('font-weight', newval);
+                        localStorage.setItem("Payee_weight", newval);
+                    });
+
+                    $("#Payee_name_rang2").change(function(){
+                        var newval1 =$(this).val();
+                        $("#Payee_lbl").css('margin-top', newval1 +"px" );
+                        localStorage.setItem("Payee_mrg_top", newval1);
+                    });
+
+                    $("#Payee_name_rang3").change(function(){
+                        var newval2 =$(this).val();
+                        $("#Payee_lbl").css('margin-left', newval2 +"px" );
+                        localStorage.setItem("Payee_mrg_lft", newval2);
+                    });
+
+
+                    $("#Payee_name_butt").click(function(){
+                        $("#Payee_name_sett").toggle(600)})
+
+                    $("#Payee_name_left").click(function(){
+                        $("#Payee_lbl").css('text-align', 'left');
+                        localStorage.setItem("Payee_align", "left");
+                    })
+
+                    $("#Payee_name_center").click(function(){
+                        $("#Payee_lbl").css('text-align', 'center');
+                        localStorage.setItem("Payee_align", "center");
+                    })
+
+                    $("#Payee_name_right").click(function(){
+                        $("#Payee_lbl").css('text-align', 'right');
+                        localStorage.setItem("Payee_align", "right");
+                    })
+
+                
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+:root {
+  --credit-left: 501px;
+  --credit-top: -9px;
+  --location-left: 370px;
+  --location-top: 136px;
+  --destination-left: 60px;
+  --destination-top: 107px;
+ 
+}
+body {
+  background-color: #f8f9fa;
+}
+.cheque-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 646.3px;
+  height: 306.15px;
+  position: relative;
+  background: url('assets/img/alg-bdl.png') ;
+
+}
+
+
+
+.form-control.transparent {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+/* .textAndInpHeight {
+  height: 50px;
+} */
+
+
+
+
+
+.form-group {
+  position: absolute;
+  z-index: 1;
+}
+
+.cheque-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.transparent {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.transparent:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.textAndInpHeight {
+  font-size: 12px;
+  height: 30px;
+  text-align: center;
+  font-family:adobe arabic;
+  font-size:19px;
+}
+
+#n_cheque {
+  position: absolute;
+  width: 114px;
+  height: 30px;
+  left: 34px;
+  top: 238px;
+}
+
+#destination {
+  position: absolute;
+  width: 480px;
+  height: 30px;
+  left: 60px;
+  top: 107px;
+}
+
+#credit {
+  position: absolute;
+  width: 149px;
+  height: 30px;
+  left: 496px;
+  top: -9px;
+  font-size: 17.5px;
+}
+
+#credit-letter:disabled {
+  position: absolute;
+  width: 398px;
+  resize: none;
+  max-height: 66px;
+  left: 141px;
+  top: 45px;
+}
+
+#date {
+  position: absolute;
+  width: 139px;
+  height: 30px;
+  left: 480px;
+  top: 137px;
+}
+
+#lieux {
+  position: absolute;
+  width: 115px;
+  height: 30px;
+  left: 370px;
+  top: 136px;
+}
+
+#solde {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  left: 300px;
+  top: 50px;
+}
+
+#n_piece {
+  position: absolute;
+  width: 210px;
+  height: 30px; 
+  left: 300px;
+  top: 100px;
+}
+
+#libelle {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  left: 300px;
+  top: 150px;
+}
+
+#debit {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  left: 300px;
+  top: 200px;
+}
+
+.submit {
+  position: absolute;
+  width: 115px;
+  height: 30px;
+  left: 300px;
+  top: 350px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0062cc;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: transparent;
+}

@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <h2 data-translate="Insert Data">Insert Data</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="cheque-container">
+          <form id="myForm" method="post">
+            <div class="form-group">
+              <input type="date" class="form-control transparent "  data-translate="Date" id="date" name="date" placeholder="Date" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control textAndInpHeight" id="n_cheque" name="n_cheque" data-translate="N Cheque" placeholder="N Cheque" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control transparent textAndInpHeight" id="destination"data-translate="Destination"  name="destination" placeholder="Destination" required>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control transparent textAndInpHeight" data-translate="Credit" id="credit" name="credit"  data-translate="Credit" placeholder="Credit" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control transparent textAndInpHeight" id="credit-letter" name="credit-letter" data-translate="CreditInLetters" placeholder="Credit in Letters" disabled required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="input" class="form-control transparent textAndInpHeight" id="lieux" name="lieux" data-translate="Lieux" placeholder="Lieux" required>
+            </div>
+            <button type="submit" data-translate="Submit" class="btn btn-primary submit"></button>
+          </form>
+  
+          <div class="cheque-preview">
+            <img src="assets/img/alg-bdl.jpg" alt="Cheque Preview">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" id="n_piece" name="n_piece" data-translate="N Piece" placeholder="N Piece" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="libelle" name="libelle" data-translate="Libelle" placeholder="Libelle" required>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" id="debit" name="debit" data-translate="Debit" placeholder="Debit" required>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" id="solde" name="solde" data-translate="Solde" placeholder="Solde" required>
+        </div>
+      </div>
+    </div>
+  </div>

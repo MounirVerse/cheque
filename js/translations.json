@@ -1,0 +1,44 @@
+{
+  "AR": {
+      "Date": "التاريخ",
+      "N Cheque": "رقم الشيك",
+      "Destination": "المستفيد",
+      "Credit": "المبلغ",
+      "Credit in Letters": "المبلغ بالأحرف",
+      "Lieux": "المكان",
+      "N Piece": "رقم القطعة",
+      "Libelle": "العنوان",
+      "Debit": "المدين",
+      "Solde": "الرصيد",
+      "Insert Data": "ادخال البيانات",
+      "Submit": "إرسال"
+  },
+  "FR": {
+      "Date": "Date",
+      "N Cheque": "N Cheque",
+      "Destination": "Destinataire",
+      "Credit": "Crédit",
+      "Credit in Letters": "Montant en lettres",
+      "Lieux": "Lieux",
+      "N Piece": "N Piece",
+      "Libelle": "Libellé",
+      "Debit": "Débit",
+      "Solde": "Solde",
+      "Insert Data": "Insérer les données",
+      "Submit": "Soumettre"
+  },
+  "EN": {
+      "Date": "Date",
+      "N Cheque": "N Cheque",
+      "Destination": "Destination",
+      "Credit": "Credit",
+      "Credit in Letters": "Credit in Letters",
+      "Lieux": "Lieux",
+      "N Piece": "N Piece",
+      "Libelle": "Libelle",
+      "Debit": "Debit",
+      "Solde": "Solde",
+      "Insert Data": "Insert Data",
+      "Submit": "Submit"
+  }
+}
